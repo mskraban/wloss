@@ -5,6 +5,7 @@ require_once 'config.php';
 // Define variables and initialize with empty values
 $username = $password = "";
 $username_err = $password_err = "";
+
  
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -72,7 +73,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Close connection
     mysqli_close($link);
 }
+
+function getRealIpAddr()
+{
+    if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
+    {
+        $ip=$_SERVER['HTTP_CLIENT_IP'];
+    }
+    elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))   //to check ip is pass from proxy
+    {
+        $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
+    }
+    else
+    {
+        $ip=$_SERVER['REMOTE_ADDR'];
+    }
+    return $ip;
+}
 ?>
+
+
  
  <!DOCTYPE html>
 <html>
@@ -90,6 +110,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 
 <body>
+
     <section class="hero is-success is-fullheight">
         <div class="hero-body">
             <div class="container has-text-centered">
@@ -97,6 +118,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <h3 class="title has-text-white">Login to</h3>
                     <img src="logo.svg" width="300px">
                     <p class="subtitle has-text-white">Platform.</p>
+                    <?php echo getRealIpAddr(); ?>
                     <div class="box">
                         <figure class="avatar">
                             <img src="avatar.png" height="128px" width="128px">
