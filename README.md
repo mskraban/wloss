@@ -1,1 +1,3 @@
-# wloss
+# Chores
+
+Personal free time project
