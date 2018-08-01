@@ -71,7 +71,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 
         <ul class="no-dots">
             <li class="li-active"><a href="#"><i class="fas fa-tachometer-alt icon-padding"></i>Pregled</a></li>
-            <li><a href="#"><i class="fas fa-tasks icon-padding"></i>Opravila</a></li>
+            <li><a href="Opravila.php"><i class="fas fa-tasks icon-padding"></i>Opravila</a></li>
             <li><a href="#"><i class="fas fa-external-link-square-alt icon-padding"></i>Napredek</a></li>
             <li><a href="#"><i class="far fa-calendar-alt icon-padding"></i>Koledar</a></li>
             <li><a href="#"><i class="fas fa-thumbtack icon-padding"></i>Obvestila</a></li>
@@ -229,7 +229,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                            Konec počitnic čez:
                         </div>
                         <div class="container countdown-clock">
-                            <div class="row">
+                            <div class="row j-center">
                                 <div class="col-2 text-center"><span id="demo"></span></div>
                                 <div class="col-1 text-center"><span id="Dot">:</div>
                                 <div class="col-2 text-center"><span id="demo-1"></span></div>
@@ -237,20 +237,20 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                                 <div class="col-2 text-center"><span id="demo-2"></span></div>
                                 <div class="col-1 text-center"><span id="Dot-2">:</div>
                                 <div class="col-2 text-center"><span id="demo-3"></span></div>
-                                <div class="col-1"></div>
+
                             </div>
                         </div>
                         <div id="demo"></div>
                         <div class="container">
-                            <div class="row countdown-text">
+                            <div class="row countdown-text j-space">
                                 <div class="col-2 dd text-center">Dni</div>
-                                <div class="col-1"></div>
+
                                 <div class="col-2 hh text-center">&nbsp;&nbsp;&nbsp;Ur&nbsp;</div>
-                                <div class="col-1"></div>
+
                                 <div class="col-2 mm text-center">Minut</div>
-                                <div class="col-1"></div>
+
                                 <div class="col-2 ss text-center">Sekund</div>
-                                <div class="col-1"></div>
+
                             </div>
                         </div>
                     </div>

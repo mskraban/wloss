@@ -102,11 +102,11 @@ div.zabuto_calendar .table tr td.event-clickable {
 /* badge */
 div.zabuto_calendar .badge-today,
 div.zabuto_calendar div.legend span.badge-today {
-    background-color: #4285f4;
-    color: #ffffff;
-    text-shadow: none;
-    border-radius: 25px;
-    padding: 10px;
+    background-color : #4c7297;
+    color            : #ffffff;
+    text-shadow      : none;
+    border-radius    : 25px;
+    padding          : 8px 11px;
 }
 
 .badge {
