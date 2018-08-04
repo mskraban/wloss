@@ -37,6 +37,7 @@ body {
 .navbar {
     height           : 60px;
     background-color : #424a4f;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .color-brand {
@@ -135,10 +136,7 @@ body {
     background-color   : #858a8e;
     overflow-x         : hidden;
     transition         : 0.5s ease-out;
-    border-right       : 1px solid #e3e3e3;
-    border-right-width : 3px;
-    border-right-style : solid;
-    border-right-color : rgb(227, 227, 227);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .sidenav a {
@@ -160,8 +158,6 @@ body {
 .li-active a {
     color            : #e4e4e4;
     background-color : #5b6267;
-    padding-top      : 20px;
-    padding-bottom   : 20px;
 }
 
 a.text-secondary:hover {
@@ -252,6 +248,36 @@ a.text-secondary {
     box-shadow       : 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
+.widget-xl-slim {
+    background-color : white;
+    width            : 100%;
+    height           : 200px !important;
+    border-radius    : 5px;
+    padding          : 24px 20px;
+    margin-bottom    : 25px;
+    box-shadow       : 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.widget-xl-extra-slim {
+    background-color : white;
+    width            : 100%;
+    height           : 50px !important;
+    border-radius    : 5px;
+    padding          : 24px 20px;
+    margin-bottom    : 25px;
+    box-shadow       : 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.widget-task {
+    background-color : white;
+    width            : 100%;
+    height           : 100px !important;
+    border-radius    : 5px;
+    padding          : 24px 20px;
+    margin-bottom    : 25px;
+    box-shadow       : 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
 .widget-lg {
     background-color : white;
     width            : 100%;
@@ -277,6 +303,10 @@ a.text-secondary {
     min-height    : 1px;
     padding-right : 15px;
     padding-left  : 15px;
+}
+
+.widget-lastrow {
+    margin-bottom: 0px;
 }
 
 .container-menu {
@@ -501,6 +531,10 @@ a.text-secondary {
     height : 50%;
 }
 
+.w-50 {
+    width: 50%;
+}
+
 .font-heading-list {
     font-family : 'Roboto', sans-serif;
     font-size   : 1.4rem;
@@ -528,3 +562,54 @@ a.text-secondary {
 .j-space {
     justify-content: space-around;
 }
+
+.bg-purp {
+    background-color: #5b5a8c;
+}
+
+.heading-day {
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+}
+
+.heading-date {
+    font-size: 2.1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.58);
+}
+
+.heading-month {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.bg-primary {
+    height: 100%;
+    background-image: linear-gradient(to right top, #385789, #43517d, #494b72, #4b4666, #4b415b);
+    -webkit-animation: Gradient 5s ease infinite;
+    -moz-animation: Gradient 5s ease infinite;
+    animation: Gradient 5s ease infinite;
+    background-size: 300% 300%;
+}
+
+.animation-delay-200 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.2s;
+}
+
+.animation-delay-400 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.4s;
+}
+
+.animation-delay-600 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.6s;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+

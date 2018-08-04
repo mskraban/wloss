@@ -18,6 +18,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css"/>
     <link rel="stylesheet" href="assets/css/calendar.css"/>
@@ -27,6 +28,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="assets/js/countDown.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/calendar.js"></script>
 </head>
@@ -50,12 +52,16 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
         </div>
 
         <ul class="nav navbar-nav flex-row justify-content-between ml-auto text-white">
-         <span class="icon">
-              <i class="far fa-user padding-5-right"></i>
-              </span>
-            <span class="padding-15-right">
-              <b><?php echo htmlspecialchars($_SESSION['username']); ?></b>
-              </span>
+            <li>
+                <span class="icon">
+                       <i class="far fa-user padding-5-right"></i>
+                       </span>
+                <span class="padding-15-right">
+                       <b><?php echo htmlspecialchars($_SESSION['username']); ?></b>
+                       </span>
+               </li>
+
+
 
             <a class="button has-background-white text-secondary" href="logout.php">
               <span class="icon">
@@ -117,7 +123,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 widget">
-                    <div class="widget-sm">
+                    <div class="widget-sm widget-lastrow">
                         <div class="widget-left">
                             <i class="fas fa-shopping-basket"></i>
                         </div>
@@ -137,14 +143,14 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
             </div>
             <div class="row">
                 <div class="col-12 col-lg-4 col-xl-4 widget">
-                    <div class="widget-lg-img">
+                    <div class="widget-lg-img widget-lastrow">
                         <div class="widget-bg-blue">
                         </div>
                         <div class="text-over-bg">
                             Razpored
                         </div>
                         <div class="row todo-row ml-0 mr-0 b-cell">
-                            <div class="col-12 b-cell-border">
+                            <div class="col-12 b-cell-border animated fadeInRight">
                                 <div class="row b-cell-row">
                                     <div class="col-3"><img src="assets/img/trash.png"></div>
                                     <div class="col-9 pl-0">
@@ -161,7 +167,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 b-cell-border">
+                            <div class="col-12 b-cell-border animated fadeInRight animation-delay-200">
                                 <div class="row b-cell-row">
                                     <div class="col-3"><img src="assets/img/cart.png"></div>
                                     <div class="col-9 pl-0">
@@ -178,7 +184,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 b-cell-border">
+                            <div class="col-12 b-cell-border animated fadeInRight animation-delay-400">
                                 <div class="row b-cell-row">
                                     <div class="col-3"><img src="assets/img/pot.png"></div>
                                     <div class="col-9 pl-0">
@@ -195,7 +201,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 b-cell-border">
+                            <div class="col-12 b-cell-border animated fadeInRight animation-delay-600">
                                 <div class="row b-cell-row">
                                     <div class="col-3"><img src="assets/img/dumbell.png"></div>
                                     <div class="col-9 pl-0">
@@ -217,12 +223,12 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 col-xl-4 widget">
-                    <div class="widget-lg">
+                    <div class="widget-lg widget-lastrow">
                         <div id="my-calendar"></div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 col-xl-4 widget">
-                    <div class="widget-lg-img">
+                    <div class="widget-lg-img widget-lastrow">
                         <div class="widget-img">
                         </div>
                         <div class="widget-img-text widget-divider">
