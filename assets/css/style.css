@@ -603,6 +603,15 @@ a.text-secondary {
     background-size   : 300% 300%;
 }
 
+.bg-calendar {
+    height            : 100%;
+    background-image: linear-gradient(to left bottom, #190d9b, #5208a1, #7705a6, #9707ab, #b512ae);
+    -webkit-animation : Gradient 5s ease infinite;
+    -moz-animation    : Gradient 5s ease infinite;
+    animation         : Gradient 5s ease infinite;
+    background-size   : 300% 300%;
+}
+
 .animation-delay-200 {
     -webkit-animation-delay : 0.1s;
     animation-delay         : 0.2s;
@@ -647,8 +656,8 @@ a.text-secondary {
 }
 
 .task:hover {
- background-color: #4746718a;
-    transition: ease-out 0.1s;
+    background-color : #4746718a;
+    transition       : ease-out 0.1s;
 }
 
 .progress {

@@ -76,14 +76,14 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
         <div class="poppins font-weight-500 menu-title text-upper">Meni</div>
 
         <ul class="no-dots">
-            <li class="li-active"><a href="#"><i class="fas fa-tachometer-alt icon-padding"></i>Pregled</a></li>
+            <li class="li-active"><a href="welcome.php"><i class="fas fa-tachometer-alt icon-padding"></i>Pregled</a></li>
             <li><a href="Opravila.php"><i class="fas fa-tasks icon-padding"></i>Opravila</a></li>
-            <li><a href="#"><i class="fas fa-external-link-square-alt icon-padding"></i>Napredek</a></li>
-            <li><a href="#"><i class="far fa-calendar-alt icon-padding"></i>Koledar</a></li>
-            <li><a href="#"><i class="fas fa-thumbtack icon-padding"></i>Obvestila</a></li>
+            <li><a href="koledar.php"><i class="far fa-calendar-alt icon-padding"></i>Koledar</a></li>
             <li><a href="#"><i class="fas fa-utensils icon-padding"></i>Kuhanje</a></li>
-            <li><a href="#"><i class="fas fa-chart-line icon-padding"></i>Statistika</a></li>
             <li><a href="#"><i class="fas fa-shopping-cart icon-padding"></i>Nakupi</a></li>
+            <li><a href="#"><i class="fas fa-dollar-sign icon-padding"></i>Finance</a></li>
+            <li><a href="#"><i class="fas fa-heartbeat icon-padding"></i>Zdravje</a></li>
+            <li><a href="#"><i class="fas fa-chart-line icon-padding"></i>Statistika</a></li>
         </ul>
     </div>
 
