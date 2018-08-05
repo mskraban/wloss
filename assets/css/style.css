@@ -37,7 +37,7 @@ body {
 .navbar {
     height           : 60px;
     background-color : #424a4f;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow       : 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .color-brand {
@@ -127,16 +127,16 @@ body {
 }
 
 .sidenav {
-    height             : 100%;
-    width              : 250px;
-    position           : fixed;
-    z-index            : 1;
-    top                : 0;
-    left               : 0;
-    background-color   : #858a8e;
-    overflow-x         : hidden;
-    transition         : 0.5s ease-out;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    height           : 100%;
+    width            : 250px;
+    position         : fixed;
+    z-index          : 1;
+    top              : 0;
+    left             : 0;
+    background-color : #858a8e;
+    overflow-x       : hidden;
+    transition       : 0.5s ease-out;
+    box-shadow       : 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .sidenav a {
@@ -278,6 +278,16 @@ a.text-secondary {
     box-shadow       : 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
+.widget-auto {
+    background-color : white;
+    width            : 100%;
+    height           : 100%;
+    border-radius    : 5px;
+    padding-left     : 15px;
+    padding-right    : 15px;
+    box-shadow       : 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
 .widget-lg {
     background-color : white;
     width            : 100%;
@@ -306,7 +316,7 @@ a.text-secondary {
 }
 
 .widget-lastrow {
-    margin-bottom: 0px;
+    margin-bottom : 0px;
 }
 
 .container-menu {
@@ -532,7 +542,7 @@ a.text-secondary {
 }
 
 .w-50 {
-    width: 50%;
+    width : 50%;
 }
 
 .font-heading-list {
@@ -556,60 +566,92 @@ a.text-secondary {
 }
 
 .j-center {
-    justify-content: center;
+    justify-content : center;
 }
 
 .j-space {
-    justify-content: space-around;
+    justify-content : space-around;
 }
 
 .bg-purp {
-    background-color: #5b5a8c;
+    background-color : #5b5a8c;
 }
 
 .heading-day {
-    font-size: 3rem;
-    font-weight: 500;
-    color: white;
+    font-size   : 3rem;
+    font-weight : 500;
+    color       : white;
 }
 
 .heading-date {
-    font-size: 2.1rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.58);
+    font-size   : 2.1rem;
+    font-weight : 400;
+    color       : rgba(255, 255, 255, 0.58);
 }
 
 .heading-month {
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size   : 1.5rem;
+    font-weight : 400;
 }
 
 .bg-primary {
-    height: 100%;
-    background-image: linear-gradient(to right top, #385789, #43517d, #494b72, #4b4666, #4b415b);
-    -webkit-animation: Gradient 5s ease infinite;
-    -moz-animation: Gradient 5s ease infinite;
-    animation: Gradient 5s ease infinite;
-    background-size: 300% 300%;
+    height            : 100%;
+    background-image  : linear-gradient(to right top, #385789, #43517d, #494b72, #4b4666, #4b415b);
+    -webkit-animation : Gradient 5s ease infinite;
+    -moz-animation    : Gradient 5s ease infinite;
+    animation         : Gradient 5s ease infinite;
+    background-size   : 300% 300%;
 }
 
 .animation-delay-200 {
-    -webkit-animation-delay: 0.1s;
-    animation-delay: 0.2s;
+    -webkit-animation-delay : 0.1s;
+    animation-delay         : 0.2s;
 }
 
 .animation-delay-400 {
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.4s;
+    -webkit-animation-delay : 0.2s;
+    animation-delay         : 0.4s;
 }
 
 .animation-delay-600 {
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.6s;
+    -webkit-animation-delay : 0.2s;
+    animation-delay         : 0.6s;
 }
 
 .align-center {
-    display: flex;
-    align-items: center;
+    display     : flex;
+    align-items : center;
 }
 
+.divider {
+    height             : 2px;
+    -webkit-box-shadow : inset 0px 0px 12px -3px rgb(52, 55, 84);
+    -moz-box-shadow    : inset 0px 0px 12px -3px rgb(52, 55, 84);
+    box-shadow         : inset 0px 0px 12px -3px rgb(52, 55, 84);
+}
+
+.task-first {
+    padding                 : 12px;
+    font-size               : 1.6rem;
+    background-color        : #3c4163;
+    border-top-left-radius  : 5px;
+    border-top-right-radius : 5px;
+}
+
+.task {
+    height      : 3rem;
+    display     : flex;
+    align-items : center;
+    font-weight : 100;
+    font-size   : 1.2rem;
+}
+
+.task:hover {
+ background-color: #4746718a;
+    transition: ease-out 0.1s;
+}
+
+.progress {
+    background-color : #484c74;
+    margin-top       : 3px;
+}
