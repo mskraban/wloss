@@ -32,9 +32,30 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
     <script src="assets/js/script.js"></script>
     <script src="assets/js/calendar.js"></script>
 </head>
-<body id="w-background">
+<body class="bg-index">
 
+<script>
+    $(document).ready(function() {
+        var previous = document.referrer;
+        console.log("Previous site: " + previous);
 
+        var className = $('body').attr('class');  //.split(' ')[0];
+
+        if (previous == "http://localhost/chores/koledar.php") {
+            var classBg = "bg-calendar-nf";
+            $('body').addClass(classBg);
+        }
+        else if (previous == "http://localhost/chores/Opravila.php") {
+            var classBg = "bg-opravila-nf";
+            $('body').addClass(classBg);
+        }
+        console.log("Previous body class: " + classBg);
+        setTimeout(function() {
+            $('body').removeClass(classBg);
+        }, 200);
+        //  $('body').removeClass("bg-calendar", 5000);
+    });
+</script>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
 

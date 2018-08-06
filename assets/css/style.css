@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 
-body {
-    background-color : #e8e8e8;
-}
-
 .wrap-flex {
     display         : flex;
     justify-content : center;
@@ -594,6 +590,21 @@ a.text-secondary {
     font-weight : 400;
 }
 
+.bg-index {
+    height: 100%;
+    background-color : #e8e8e8;
+    -webkit-transition: all 4s ease;
+    -moz-transition: all 4s ease;
+    -o-transition: all 4s ease;
+    transition: all 4s ease;
+}
+
+.bg-index-nf {
+    height: 100%;
+    background-color : #e8e8e8 !important;
+    transition: all 0s !important;
+}
+
 .bg-primary {
     height            : 100%;
     background-image  : linear-gradient(to right top, #385789, #43517d, #494b72, #4b4666, #4b415b);
@@ -601,15 +612,40 @@ a.text-secondary {
     -moz-animation    : Gradient 5s ease infinite;
     animation         : Gradient 5s ease infinite;
     background-size   : 300% 300%;
+    -webkit-transition: all 4s ease;
+    -moz-transition: all 4s ease;
+    -o-transition: all 4s ease;
+    transition: all 4s ease;
+}
+
+.bg-opravila {
+    height            : 100%;
+    background-color: #494b72;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    transition: all 3s ease;
+}
+
+.bg-opravila-nf {
+    height            : 100%;
+    background-color: #494b72 !important;
+    transition: all 0s !important;
 }
 
 .bg-calendar {
     height            : 100%;
-    background-image: linear-gradient(to left bottom, #190d9b, #5208a1, #7705a6, #9707ab, #b512ae);
-    -webkit-animation : Gradient 5s ease infinite;
-    -moz-animation    : Gradient 5s ease infinite;
-    animation         : Gradient 5s ease infinite;
-    background-size   : 300% 300%;
+    background-color: #6d4c41;
+    -webkit-transition: all 4s ease;
+    -moz-transition: all 4s ease;
+    -o-transition: all 4s ease;
+    transition: all 4s ease;
+}
+
+.bg-calendar-nf {
+    height            : 100%;
+    background-color: #6d4c41 !important;
+    transition: all 0s !important;
 }
 
 .animation-delay-200 {

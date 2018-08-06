@@ -1,4 +1,5 @@
 $(document).ready( function(){
+
     $('.dash').click(function(keyframes, options) {
         var toggleWidth = $("#mySidenav").width() == 0 ? "250px" : "0px";
         $('#mySidenav').animate({width: toggleWidth}, 500, );
